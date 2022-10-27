@@ -20,4 +20,5 @@ export const html = () => {
             'output': {'file': 'gulp/version.json'}
         }))
         .pipe(app.gulp.dest(app.path.build.html))
+        .pipe(app.plugins.browserSync.stream());
 }
