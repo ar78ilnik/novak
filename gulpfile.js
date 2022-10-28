@@ -33,6 +33,12 @@ import {
 import {
     images
 } from "./gulp/tasks/images.js";
+import {
+    fonts
+} from "./gulp/tasks/fonts.js";
+import {
+    svgSprive
+} from "./gulp/tasks/svgSprive.js";
 
 function watcher() {
     gulp.watch(path.watch.files, copy);
@@ -42,7 +48,11 @@ function watcher() {
     gulp.watch(path.watch.images, images);
 }
 
-const mainTasks = gulp.parallel(copy, html, scss, js, images);
+export {
+    svgSprive
+}
+
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images, fonts));
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 
