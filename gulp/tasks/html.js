@@ -9,8 +9,8 @@ export const html = () => {
         message: "Error: <%= error.message %>"
     })))
         .pipe(fileInclude())
-        .pipe(webpHtmlNosvg())
-        .pipe(versionNumber({
+        .pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
+        .pipe(app.plugins.if(app.isBuild, versionNumber({
             'value': '%DT%',
             'append': {
                 'key': '_v',
@@ -18,7 +18,7 @@ export const html = () => {
                 'to': ['css', 'js']
             },
             'output': {'file': 'gulp/version.json'}
-        }))
+        })))
         .pipe(app.gulp.dest(app.path.build.html))
         .pipe(app.plugins.browserSync.stream());
 }
