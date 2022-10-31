@@ -1,3 +1,13 @@
 .container {
-	margin: 0 auto;
+    margin: 0 auto;
+
+    &_header {
+        margin-top: 70px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        width: 940px;
+    }
 }

@@ -1,0 +1,11 @@
+.header {
+    &__logo {
+        font-size: 47px;
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    &__lang {
+        display: none;
+    }
+}
