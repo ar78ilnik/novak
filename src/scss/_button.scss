@@ -1,6 +1,10 @@
 .button {
     &_menu {
         display: block;
+        margin: 0;
+        padding: 0;
         margin-left: auto;
+        border: none;
+        background-color: transparent;
     }
 }
