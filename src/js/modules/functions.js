@@ -1,3 +1,3 @@
-export const sum = () => {
-    return 4 + 5;
+export const func = () => {
+    console.log('func');
 }

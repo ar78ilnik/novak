@@ -1,0 +1,11 @@
+.link {
+    &_menu {
+        text-decoration: none;
+        font-size: 34px;
+        color: var(--text-gray);
+
+        &-logo {
+            color: var(--text-main);
+        }
+    }
+}

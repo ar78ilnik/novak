@@ -1,3 +1,9 @@
-import * as flsFunctions from "./modules/functions.js";
+import {
+    func
+} from "./modules/functions.js";
+import {
+    menu
+} from "./modules/menu.js";
 
-console.log(flsFunctions.sum());
+func();
+menu();

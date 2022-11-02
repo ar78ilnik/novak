@@ -7,4 +7,8 @@
         border: none;
         background-color: transparent;
     }
+
+    &_menu--open {
+        display: block;
+    }
 }

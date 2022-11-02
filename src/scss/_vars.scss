@@ -1,19 +1,19 @@
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	object-fit: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: cover;
 }
 
 li {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Width */
@@ -21,6 +21,6 @@ $containerMobile: 320;
 
 /* Colors */
 :root {
-	--text-main: #000;
-	--textGrey: #828282;
+    --text-main: #000;
+    --text-gray: #828282;
 }

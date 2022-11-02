@@ -2,4 +2,29 @@
     &_menu {
         display: none;
     }
+
+    &_menu--open {
+        display: flex;
+        flex-direction: column;
+        gap: 68px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    &__cross {
+        display: none;
+    }
+
+    &__cross--open {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
 }

@@ -1,14 +1,3 @@
 .icon {
-	&_menu, .button_menu--open &_cross {
-		display: block;
-	}
-	&_cross, .button_menu--open &_menu {
-		display: none;
-	}
-	&_cross {
-		display: none;
-	}
-	&_button {
-		stroke: var(--text-main);
-	}
+    stroke: var(--text-main);
 }
