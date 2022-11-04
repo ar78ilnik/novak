@@ -5,10 +5,23 @@
     &_header {
         margin-top: 70px;
     }
+    &_skills,
+    &_sections,
+    &_portfolio,
+    &_contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
 }
 
 @media (min-width: 1280px) {
     .container {
         width: 940px;
+        &_header {
+            margin-top: 0;
+        }
     }
 }

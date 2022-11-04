@@ -28,3 +28,15 @@
         z-index: 2;
     }
 }
+
+@media (min-width: 1280px) {
+    .list {
+        &_menu {
+            height: inherit;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--text-gray);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	&_skills {
+		width: 60%;
+	}
+	&_portfolio {
+		width: 100%;
+	}
+}

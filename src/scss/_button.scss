@@ -11,4 +11,21 @@
     &_menu--open {
         display: block;
     }
+    &_contacts {
+        font-family: 'Roboto-Bold', sans-serif;
+        font-size: 18px;
+        border: 0;
+        color: white;
+        background-color: var(--text-main);
+        padding: 20px 120px;
+        border-radius: 50px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .button {
+        &_menu {
+            display: none;
+        }
+    }
 }

@@ -1,5 +1,16 @@
-body {
+.body {
     font-family: 'Roboto-Medium', sans-serif;
     font-size: 18px;
     color: var(--textMain);
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__item_grey {
+        background-color: var(--background-gray);
+    }
 }

@@ -8,3 +8,12 @@
         position: relative;
     }
 }
+
+@media (min-width: 1280px) {
+    .wrapper {
+        &_header {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+}
